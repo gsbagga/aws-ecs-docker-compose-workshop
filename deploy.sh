@@ -19,6 +19,6 @@ echo "App is ready!"
 docker compose ps
 
 # generate cloud formation templates
-docker compose -f docker-compose.yaml convert > aws-cloudformation.yaml
-aws cloudformation create-stack --stack-name ecsDocker${run_number} --template-body file://aws-cloudformation.yaml
-aws cloudformation wait stack-create-complete --stack-name ecsDocker${run_number}
+# docker compose -f docker-compose.yaml convert > aws-cloudformation.yaml
+# aws cloudformation create-stack --stack-name ecsDocker${run_number} --template-body file://aws-cloudformation.yaml
+# aws cloudformation wait stack-create-complete --stack-name ecsDocker${run_number}
